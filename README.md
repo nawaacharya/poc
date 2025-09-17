@@ -1,1 +1,1 @@
-- used docker image for `redis` and `postgresql`
+- use docker image for `redis` and `postgresql`
