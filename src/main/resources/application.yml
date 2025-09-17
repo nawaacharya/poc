@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: orm-service
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    #url: jdbc:h2:mem:testdb
+    #driverClassName: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/orm-poc
+    driver-class-name: org.postgresql.Driver
+    username: user
+    password: pass
+  
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  jackson:
+    default-property-inclusion: non-null
+
+server:
+  port: 8080
+  servlet:
+    context-path: /poc
+
+logging:
+  level:
+    root: INFO
+    '[com.globant.poc]': DEBUG
+    '[org.springframework]': WARN
+
+    
