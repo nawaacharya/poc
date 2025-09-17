@@ -1,4 +1,4 @@
 package com.globant.poc.model.strategy;
 
-//marker interface for redis value serialization
+//marker interface
 public interface LoanModel { }
