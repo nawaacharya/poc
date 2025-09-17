@@ -52,7 +52,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- spring data for includes hibernate -->
+		<!-- spring jpa includes hibernate -->
 		<!-- does not require hibernate.cfg.xml -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -85,7 +85,13 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!-- support local date in json -->
+		<!-- open api  -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.8.13</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
